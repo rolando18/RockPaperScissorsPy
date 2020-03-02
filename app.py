@@ -25,6 +25,7 @@ def main():
         while(player_move not in moves):
             print(f"Please enter a valid move {moves}: ")
             player_move = input().lower()
+        print(f"Computer plays {comp_move[0].upper()}{comp_move[1:]}")
         # determine round winner
         if comp_move == player_move:
             print("Draw!")
