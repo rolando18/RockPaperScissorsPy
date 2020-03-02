@@ -13,7 +13,7 @@ def main():
     while(num_of_games % 2 == 0 or num_of_games <= 1):
         print("Please enter an odd number greater than 1: ")
         num_of_games = int(input())
-        # determine max score before win
+    # determine max score before win
     winning_moves = math.ceil(num_of_games/2)
     print(f"Alright! Best {winning_moves} of {num_of_games} wins!")
     while(comp_score < winning_moves and player_score < winning_moves):
