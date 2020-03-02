@@ -1,6 +1,6 @@
 # Rock, Paper, Scissors
 
-Created as a fun project to get some Python project.
+Created as a fun project to get some practice with Python.
 
 ### Next step(s):
 
