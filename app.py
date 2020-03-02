@@ -1,3 +1,4 @@
+from os import system
 from random import randint
 import math
 
@@ -44,7 +45,10 @@ def main():
                 player_score += 1
             else:
                 comp_score += 1
-        # determine leader
+        # clear screen
+        system('pause')
+        system('cls')
+        # show scores
         print(f"Computer {comp_score} : Player {player_score}")
     # determine overall winner
     winner = "Computer" if comp_score > player_score else "Player"
