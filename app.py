@@ -26,7 +26,6 @@ def main():
         while(player_move not in moves):
             print(f"Please enter a valid move {moves}: ")
             player_move = input().lower()
-        print(f"Computer plays {comp_move[0].upper()}{comp_move[1:]}")
         # determine round winner
         if comp_move == player_move:
             print("Draw!")
@@ -35,7 +34,7 @@ def main():
                 player_score += 1
             else:
                 comp_score += 1
-        elif comp_score == "paper":
+        elif comp_move == "paper":
             if player_move == "scissors":
                 player_score += 1
             else:
@@ -48,6 +47,7 @@ def main():
         # clear screen
         system('pause')
         system('cls')
+        print(f"Computer plays {comp_move[0].upper()}{comp_move[1:]}")
         # show scores
         print(f"Computer {comp_score} : Player {player_score}")
     # determine overall winner
